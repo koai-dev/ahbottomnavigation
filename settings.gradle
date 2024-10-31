@@ -1,1 +1,2 @@
-include ':demo', ':ahbottomnavigation'
+//include ':demo', ':ahbottomnavigation'
+include ':ahbottomnavigation'
