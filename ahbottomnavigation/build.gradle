@@ -31,10 +31,10 @@ version = '2.3.4'
 //}
 
 android {
-    compileSdkVersion 34
+    compileSdk 34
 
     defaultConfig {
-        minSdkVersion 19
+        minSdk 19
         versionCode 46
         versionName "2.3.4"
     }
