@@ -21,10 +21,10 @@ android {
         }
     }
 
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
+//    compileOptions {
+//        sourceCompatibility = JavaVersion.VERSION_1_8
+//        targetCompatibility = JavaVersion.VERSION_1_8
+//    }
 
     buildFeatures {
         buildConfig = true
@@ -65,7 +65,7 @@ afterEvaluate {
 
 task createReleaseTag {
     doLast {
-        def tagName = "2.3.6"
+        def tagName = "2.3.7"
         try {
             exec {
                 commandLine("git", "tag", "-a", tagName, "-m", "Release tag $tagName")
