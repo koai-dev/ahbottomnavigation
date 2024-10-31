@@ -6,30 +6,6 @@ plugins {
 group = 'com.koai-dev'
 version = '2.3.5'
 
-//ext {
-//    bintrayRepo = 'maven'
-//    bintrayName = 'ah-bottom-navigation'
-//
-//    publishedGroupId = 'com.aurelhubert'
-//    libraryName = 'AHBottomNavigation'
-//    artifact = 'ahbottomnavigation'
-//
-//    libraryDescription = 'A library to reproduce the behavior of the Bottom Navigation guidelines from Material Design.'
-//
-//    siteUrl = 'https://github.com/aurelhubert/ahbottomnavigation'
-//    gitUrl = 'https://github.com/aurelhubert/ahbottomnavigation.git'
-//
-//    libraryVersion = '2.3.4'
-//
-//    developerId = 'aurelhubert'
-//    developerName = 'Aurelien Hubert'
-//    developerEmail = 'aurel.hubert@gmail.com'
-//
-//    licenseName = 'The Apache Software License, Version 2.0'
-//    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-//    allLicenses = ["Apache-2.0"]
-//}
-
 android {
     compileSdk 34
 
@@ -89,7 +65,7 @@ afterEvaluate {
 
 task createReleaseTag {
     doLast {
-        def tagName = "2.3.5"
+        def tagName = "2.3.6"
         try {
             exec {
                 commandLine("git", "tag", "-a", tagName, "-m", "Release tag $tagName")
